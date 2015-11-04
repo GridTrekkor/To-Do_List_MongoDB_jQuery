@@ -1,0 +1,149 @@
+body {
+    background-image: url("../images/cork.png");
+    font-family: Helvetica, Modern, Arial, sans-serif;
+}
+
+#mainContainer {
+    /*text-align : center;*/
+    width : 1410px;
+    margin : 0 auto;
+    opacity : 1;
+}
+
+@media (max-width: 1430px) {
+    #mainContainer {
+        width: 1000px;
+    }
+}
+
+#addNote {
+    top : 10px;
+    left : 10px;
+    position : absolute;
+    z-index : 100;
+    opacity : 0.5;
+    cursor : default;
+}
+
+.addItem {
+    opacity : 0.2;
+    width : 100px;
+    text-align : center;
+    display: table;
+    margin: 0 auto;
+    cursor : default;
+    border : 1px solid #CCC;
+}
+
+#addNote:hover {
+    opacity : 1;
+}
+
+.addItem:hover {
+    opacity : 1;
+    border : 1px solid #999;
+    box-shadow : 0 0 3px #999;
+}
+
+#addNote img, .addItem img {
+    position : relative;
+    top : 2px;
+    right : 5px;
+}
+
+h2 {
+    height:50px;
+    line-height: 50px;
+    margin : 0;
+}
+
+h2 > .titleInput {
+    margin-top: 4px;
+}
+
+.note {
+    width : 400px;
+    height : 400px;
+    box-shadow : 0 0 15px #000;
+    margin : 20px;
+    display : inline-block;
+    padding : 15px;
+    vertical-align : top;
+    position : relative;
+    text-align : center;
+}
+
+.noteTitle {
+    width: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin: auto;
+}
+
+.titleInput, .itemInput {
+    border : 0;
+    outline-width : 0;
+    opacity : 0.5;
+}
+
+.titleInput {
+    height : 40px;
+    font-size : 32px;
+    font-weight : bold;
+    text-align : center;
+    box-shadow : 0 0 10px #AAA;
+}
+
+.deleteNote {
+    opacity : 0.1;
+    position : absolute;
+    top : 5px;
+    right : 5px;
+    cursor : default;
+}
+
+.deleteNote:hover {
+    opacity : 1;
+}
+
+.itemInput {
+    height : 20px;
+    font-size : 12px;
+    text-align : left;
+}
+
+.deleteItem {
+    opacity : 0.1;
+    position : relative;
+    top : 1px;
+    padding-right : 10px;
+    cursor : default;
+}
+
+.deleteItem:hover {
+    opacity : 1.0;
+}
+
+li {
+    font-size : 20px;
+    text-align : left;
+    height : 40px;
+    display: block;
+}
+
+li span:hover {
+    opacity : 0.5;
+    font-size : 20px;
+}
+
+.checkItem {
+    padding-right : 10px;
+    opacity : 0.2;
+    cursor : default;
+
+}
+
+.checkItemSelected, .checkItem:hover {
+    opacity : 1;
+}
