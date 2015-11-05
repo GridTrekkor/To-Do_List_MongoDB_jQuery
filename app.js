@@ -6,7 +6,7 @@ var notesRoute = require('./routes/notesRoutes');
 var mongoose = require('mongoose');
 
 //var mongoURI = "mongodb://localhost:27017/NotesDatabase";
-var mongoURI = "mongodb://grid:gridapp@ds049864.mongolab.com:49864/heroku_p4mp1bvf";
+var mongoURI = "";
 var mongoDB = mongoose.connect(mongoURI).connection;
 
 mongoDB.once('open', function() {
